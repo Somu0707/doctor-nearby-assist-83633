@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 200 98% 39%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 142 76% 36%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 20% 95%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 173 80% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 200 98% 39%;
+
+    --radius: 0.75rem;
+
+    --medical-blue: 200 98% 39%;
+    --medical-green: 142 76% 36%;
+    --medical-teal: 173 80% 40%;
+    --medical-light-bg: 210 20% 98%;
+    --medical-card: 0 0% 100%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 200 98% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 95%;
+    --sidebar-accent-foreground: 215 25% 15%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 200 98% 39%;
+  }
+
+  .dark {
+    --background: 215 28% 12%;
+    --foreground: 210 20% 98%;
+
+    --card: 215 25% 15%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 215 25% 15%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 200 98% 45%;
+    --primary-foreground: 215 28% 12%;
+
+    --secondary: 142 76% 42%;
+    --secondary-foreground: 215 28% 12%;
+
+    --muted: 215 20% 20%;
+    --muted-foreground: 215 16% 65%;
+
+    --accent: 173 80% 45%;
+    --accent-foreground: 215 28% 12%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 215 20% 22%;
+    --input: 215 20% 22%;
+    --ring: 200 98% 45%;
+
+    --medical-blue: 200 98% 45%;
+    --medical-green: 142 76% 42%;
+    --medical-teal: 173 80% 45%;
+    --medical-light-bg: 215 28% 12%;
+    --medical-card: 215 25% 15%;
+
+    --sidebar-background: 215 28% 12%;
+    --sidebar-foreground: 210 20% 98%;
+    --sidebar-primary: 200 98% 45%;
+    --sidebar-primary-foreground: 215 28% 12%;
+    --sidebar-accent: 215 20% 20%;
+    --sidebar-accent-foreground: 210 20% 98%;
+    --sidebar-border: 215 20% 22%;
+    --sidebar-ring: 200 98% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
